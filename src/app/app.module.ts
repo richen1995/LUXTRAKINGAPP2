@@ -6,6 +6,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component'; // Componente raíz
 import { SharedModule } from './shared/shared.module';
 import { AppRoutingModule } from './app.routing.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { AppRoutingModule } from './app.routing.module';
   imports: [
     BrowserModule, // Importar el módulo necesario para ejecutar en un navegador
     SharedModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
 ],
   providers: [], // Lista de servicios
   bootstrap: [AppComponent] // Componente raíz para iniciar la aplicación
