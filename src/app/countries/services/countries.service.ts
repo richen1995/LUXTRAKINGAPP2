@@ -3,8 +3,9 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Country } from '../interfaces/country';
 
+//providedIn: Es para que el srv se exponga globalmente
 @Injectable({providedIn: 'root'})
-export class ServiceNameService {
+export class CountriesService {
 
     private apiUrl: string = 'https://restcountries.com/v3.1'
     constructor(private http: HttpClient) { }
